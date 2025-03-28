@@ -1,14 +1,21 @@
 """MCP 客户端配置"""
 
+import platform
+
 # 模型配置
 MODEL = "anthropic/claude-3.7-sonnet"
 
+# Determine npx command and allowed path based on OS
+npx_command = "npx.cmd" if platform.system() == "Windows" else "npx"
+# NOTE: Please update the Linux/macOS path if you run this on those systems
+# Windows path example: D:\\Dev\\mcp-cli\\src
+allowed_path = "WINDOWS_PATH" if platform.system() == "Windows" else "LINUX_OR_MAC_PATH" # Example Linux path
+
 # MCP 服务器配置
-ALLOWED_PATH = "YOUR_LOCAL_PATH"
 SERVERS = {
     "filesystem": {
-        "command": "npx",
-        "args": ["-y", "@modelcontextprotocol/server-filesystem", ALLOWED_PATH],
+        "command": npx_command,
+        "args": ["-y", "@modelcontextprotocol/server-filesystem", allowed_path],
         "env": None
     },
     # 可以添加更多服务器配置
