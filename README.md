@@ -1,7 +1,20 @@
 
 ## 摘要
 
-当前实现的功能：基于 MCP stdio 和 OpenRouter 的简单 Agent 工具。
+当前实现的功能：基于 MCP stdio 和 OpenRouter 的简单 Agent 工具，已集成 [@modelcontextprotocol/server-filesystem](https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md) 文件系统 MCP，可持续扩展其他 stdio 格式 MCP。
+
+
+## 介绍
+
+![](http://image.huawei.com/tiny-lts/v1/images/hi3ms/a2295fdbbcac0ff84542a434a8b9e05a_2433x1544.gif)
+
+这是一个简单的 MCP 工具，目前实现了一个交互式的基于 OpenRouter Claude 大模型 + Filesystem MCP 的应用。
+
+本质上这是作者用于验证 MCP 协议的一个 Demo 作品，你可以在此基础上看看 MCP 的玩法并做一些拓展。
+
+整体来说，MCP 作为标准化的大模型外挂，确实给大模型应用开发提供了一条康庄大道，随着未来越来越多的 MCP 工具支持，基于大模型的应用能力可以期待了。
+
+后续计划用 [Fastmcp](https://github.com/jlowin/fastmcp) 做进一步的探索和验证。
 
 
 ## 依赖
@@ -12,7 +25,7 @@
 2. Node.js
 3. [uv](https://docs.astral.sh/uv/)
 
-同时确保你已经拿到 [OpenRouter](https://openrouter.ai/) 的 API Key
+同时确保你已经拿到 [OpenRouter](https://openrouter.ai/) 的 API Key。
 
 
 ## 使用

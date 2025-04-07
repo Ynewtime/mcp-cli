@@ -27,7 +27,7 @@ from config import MODEL, SERVERS, REACT_PROMPT
 
 
 # 加载环境变量
-load_dotenv()
+load_dotenv(override=True)
 
 
 # 配置日志系统
