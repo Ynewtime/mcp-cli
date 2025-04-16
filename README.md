@@ -6,7 +6,7 @@
 
 ## 介绍
 
-![](http://image.huawei.com/tiny-lts/v1/images/hi3ms/a2295fdbbcac0ff84542a434a8b9e05a_2433x1544.gif)
+![](./assets/mcp-cli基本演示.gif)
 
 这是一个简单的 MCP 工具，目前实现了一个交互式的基于 OpenRouter Claude 大模型 + Filesystem MCP 的应用。
 
